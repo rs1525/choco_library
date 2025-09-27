@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Choco library - NO UI STRINGS NEEDED -->
-    <!-- Esta librería es solo para Content Providers, no para UI -->
-    <!-- Los strings de UI deben estar en la aplicación que usa la librería -->
-</resources>
