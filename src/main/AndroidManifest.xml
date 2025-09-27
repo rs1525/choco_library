@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <!-- Provider para KWGT -->
+        <provider
+            android:name=".providers.KwgtProvider"
+            android:authorities="${applicationId}.kwgt"
+            android:exported="true"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action android:name="org.kustom.provider.KUSTOM_PACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="org.kustom.provider.KUSTOM_PACK_TYPE"
+                android:value="KWGT" />
+        </provider>
+
+        <!-- Provider para KLWP -->
+        <provider
+            android:name=".providers.KlwpProvider"
+            android:authorities="${applicationId}.klwp"
+            android:exported="true"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action android:name="org.kustom.provider.KUSTOM_PACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="org.kustom.provider.KUSTOM_PACK_TYPE"
+                android:value="KLWP" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="choco_library_name">Choco</string>
+    <string name="choco_library_description">Librería para proveedores de widgets y wallpapers KWGT/KLWP</string>
+    
+    <!-- Widget related strings -->
+    <string name="widget_by_author">Por %1$s</string>
+    <string name="widget_size_format">%1$dx%2$d</string>
+    <string name="widget_loading">Cargando widgets…</string>
+    <string name="widget_load_error">Error al cargar widgets</string>
+    <string name="widget_no_preview">Sin vista previa</string>
+    
+    <!-- Wallpaper related strings -->
+    <string name="wallpaper_by_author">Por %1$s</string>
+    <string name="wallpaper_resolution_format">%1$dx%2$d</string>
+    <string name="wallpaper_screens_format">%1$d pantallas</string>
+    <string name="wallpaper_loading">Cargando wallpapers…</string>
+    <string name="wallpaper_load_error">Error al cargar wallpapers</string>
+    <string name="wallpaper_no_preview">Sin vista previa</string>
+    
+    <!-- Search related strings -->
+    <string name="search_hint">Buscar widgets y wallpapers…</string>
+    <string name="search_no_results">No se encontraron resultados</string>
+    <string name="search_results_format">%1$d resultados encontrados</string>
+    
+    <!-- Category related strings -->
+    <string name="category_all">Todos</string>
+    <string name="category_general">General</string>
+    <string name="category_clock">Reloj</string>
+    <string name="category_weather">Clima</string>
+    <string name="category_music">Música</string>
+    <string name="category_system">Sistema</string>
+    
+    <!-- Error messages -->
+    <string name="error_file_not_found">Archivo no encontrado</string>
+    <string name="error_invalid_file">Archivo inválido</string>
+    <string name="error_extraction_failed">Error al extraer archivo</string>
+    <string name="error_json_parse">Error al procesar datos</string>
+    <string name="error_no_preview_available">Vista previa no disponible</string>
+    
+    <!-- Provider related strings -->
+    <string name="provider_kwgt_description">Proveedor de widgets KWGT</string>
+    <string name="provider_klwp_description">Proveedor de wallpapers KLWP</string>
+</resources>
