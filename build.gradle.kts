@@ -4,6 +4,9 @@ plugins {
     id("maven-publish")
 }
 
+group = "com.github.rs1525"
+version = "1.0.0"
+
 android {
     namespace = "com.akustom15.choco"
     compileSdk = 34
@@ -55,15 +58,41 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-publishing {
-    publications {
-        register<MavenPublication>("release") {
-            groupId = "com.akustom15"
-            artifactId = "choco"
-            version = "1.0.0"
-
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            register<MavenPublication>("release") {
                 from(components["release"])
+                
+                groupId = "com.github.rs1525"
+                artifactId = "choco_library"
+                version = "1.0.0"
+                
+                pom {
+                    name.set("Choco Library")
+                    description.set("Android library for KWGT and KLWP widget providers")
+                    url.set("https://github.com/rs1525/choco_library")
+                    
+                    licenses {
+                        license {
+                            name.set("MIT License")
+                            url.set("https://opensource.org/licenses/MIT")
+                        }
+                    }
+                    
+                    developers {
+                        developer {
+                            id.set("rs1525")
+                            name.set("rs1525")
+                        }
+                    }
+                    
+                    scm {
+                        connection.set("scm:git:github.com/rs1525/choco_library.git")
+                        developerConnection.set("scm:git:ssh://github.com/rs1525/choco_library.git")
+                        url.set("https://github.com/rs1525/choco_library/tree/main")
+                    }
+                }
             }
         }
     }

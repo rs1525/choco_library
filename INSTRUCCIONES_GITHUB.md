@@ -6,7 +6,7 @@
 
 1. Ve a: **https://github.com/new**
 2. Llena los datos:
-   - **Repository name**: `choco`
+   - **Repository name**: `choco_library`
    - **Description**: `🍫 Librería moderna para proveedores de widgets y wallpapers KWGT/KLWP en Android`
    - **Visibility**: ✅ Public
    - **❌ NO marques**: "Add a README file"
